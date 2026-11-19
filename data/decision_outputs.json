@@ -1,0 +1,4568 @@
+{
+  "state_generation": {
+    "methods": [
+      "native",
+      "decision_first",
+      "oracle_diagnostic",
+      "checkpoint"
+    ],
+    "cases": [
+      {
+        "group": "phase8-fresh-0000",
+        "family": "corrective",
+        "context": "Case 1900000: Maya owns a blue book in the garden. Do not repaint the book: keep its blue color. Do not relocate the book: keep it in the garden. A bell rang nearby. A visitor waited quietly. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0000",
+        "family": "corrective",
+        "context": "Case 1900000: Maya owns a blue book in the garden. Do not repaint the book: keep its blue color. Do not keep the book in the garden: put it in the library instead. A bell rang nearby. A visitor waited quietly. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0000",
+        "family": "corrective",
+        "context": "Case 1900000: Maya owns a blue book in the garden. Do not leave the book blue: make it green instead. Do not relocate the book: keep it in the garden. A bell rang nearby. A visitor waited quietly. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is blue.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0000",
+        "family": "corrective",
+        "context": "Case 1900000: Maya owns a blue book in the garden. Do not leave the book blue: make it green instead. Do not keep the book in the garden: put it in the library instead. A bell rang nearby. A visitor waited quietly. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is blue in the Selected factual conclusion: After the announced actions, the book is green and is in the library",
+            "tokens": 24
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0000",
+        "family": "corrective",
+        "context": "Case 1900000: Maya owns a blue coin in the garden. Do not repaint the coin: keep its blue color. Do not relocate the coin: keep it in the garden. A bell rang nearby. A visitor waited quietly. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "oracle_diagnostic": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "checkpoint": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0000",
+        "family": "corrective",
+        "context": "Case 1900000: Maya owns a blue coin in the garden. Do not repaint the coin: keep its blue color. Do not keep the coin in the garden: put it in the library instead. A bell rang nearby. A visitor waited quietly. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0000",
+        "family": "corrective",
+        "context": "Case 1900000: Maya owns a blue coin in the garden. Do not leave the coin blue: make it green instead. Do not relocate the coin: keep it in the garden. A bell rang nearby. A visitor waited quietly. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "After the announced actions, the coin is green and is in the garden.",
+            "tokens": 15
+          },
+          "oracle_diagnostic": {
+            "text": "After the announced actions, the coin is green and is in the garden.",
+            "tokens": 15
+          },
+          "checkpoint": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the coin is green and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0000",
+        "family": "corrective",
+        "context": "Case 1900000: Maya owns a blue coin in the garden. Do not leave the coin blue: make it green instead. Do not keep the coin in the garden: put it in the library instead. A bell rang nearby. A visitor waited quietly. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue in the Selected factual conclusion: After the announced actions, the coin is green and is in the library",
+            "tokens": 24
+          }
+        },
+        "selected_plan": "Afterward, the coin is green and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green book in the library. Do not repaint the book: keep its green color. Do not relocate the book: keep it in the library. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is green and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green book in the library. Do not repaint the book: keep its green color. Do not keep the book in the library: put it in the garden instead. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is in the garden and is in the library.",
+            "tokens": 17
+          },
+          "decision_first": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green book in the library. Do not leave the book green: make it blue instead. Do not relocate the book: keep it in the library. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is green and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green book in the library. Do not leave the book green: make it blue instead. Do not keep the book in the library: put it in the garden instead. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is green in the library and is in the garden.",
+            "tokens": 18
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green coin in the library. Do not repaint the coin: keep its green color. Do not relocate the coin: keep it in the library. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is green and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "After the announced actions, the coin is green and is in the library.",
+            "tokens": 15
+          },
+          "oracle_diagnostic": {
+            "text": "After the announced actions, the coin is green and is in the library.",
+            "tokens": 15
+          },
+          "checkpoint": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is green and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green coin in the library. Do not repaint the coin: keep its green color. Do not keep the coin in the library: put it in the garden instead. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is green and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is green and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green coin in the library. Do not leave the coin green: make it blue instead. Do not relocate the coin: keep it in the library. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is green and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is green.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green coin in the library. Do not leave the coin green: make it blue instead. Do not keep the coin in the library: put it in the garden instead. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is green and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is green in the Selected factual conclusion: After the announced actions, the coin is blue and is in the garden",
+            "tokens": 24
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue book in the kitchen. Do not repaint the book: keep its blue color. Do not relocate the book: keep it in the kitchen. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the kitchen.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the kitchen.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the kitchen."
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue book in the kitchen. Do not repaint the book: keep its blue color. Do not keep the book in the kitchen: put it in the library instead. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the kitchen.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the kitchen.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue book in the kitchen. Do not leave the book blue: make it green instead. Do not relocate the book: keep it in the kitchen. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "green",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book will be blue and will be in the kitchen.",
+            "tokens": 17
+          },
+          "decision_first": {
+            "text": "The book is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is blue in the Selected factual conclusion: After the announced actions, the book is green and is in the kitchen",
+            "tokens": 24
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the kitchen."
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue book in the kitchen. Do not leave the book blue: make it green instead. Do not keep the book in the kitchen: put it in the library instead. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the kitchen.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is blue in the Selected factual conclusion: After the announced actions, the book is green and is in the library",
+            "tokens": 24
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue coin in the kitchen. Do not repaint the coin: keep its blue color. Do not relocate the coin: keep it in the kitchen. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the kitchen.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the kitchen."
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue coin in the kitchen. Do not repaint the coin: keep its blue color. Do not keep the coin in the kitchen: put it in the library instead. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the kitchen.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue coin in the kitchen. Do not leave the coin blue: make it green instead. Do not relocate the coin: keep it in the kitchen. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "green",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin will be blue and will be in the kitchen.",
+            "tokens": 17
+          },
+          "decision_first": {
+            "text": "The coin is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the coin is green and is in the kitchen."
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue coin in the kitchen. Do not leave the coin blue: make it green instead. Do not keep the coin in the kitchen: put it in the library instead. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin will be blue and will be in the kitchen.",
+            "tokens": 17
+          },
+          "decision_first": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue in the Selected factual conclusion: After the announced actions, the coin is green and is in the library",
+            "tokens": 24
+          }
+        },
+        "selected_plan": "Afterward, the coin is green and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red book in the library. Do not repaint the book: keep its red color. Do not relocate the book: keep it in the library. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "red",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is red and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is red and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red book in the library. Do not repaint the book: keep its red color. Do not keep the book in the library: put it in the garden instead. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is in the garden and is in the library.",
+            "tokens": 17
+          },
+          "decision_first": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is red and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red book in the library. Do not leave the book red: make it green instead. Do not relocate the book: keep it in the library. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is red and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red book in the library. Do not leave the book red: make it green instead. Do not keep the book in the library: put it in the garden instead. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is red and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red coin in the library. Do not repaint the coin: keep its red color. Do not relocate the coin: keep it in the library. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "red",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the coin is red and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red coin in the library. Do not repaint the coin: keep its red color. Do not keep the coin in the library: put it in the garden instead. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is in the garden and is in the library.",
+            "tokens": 17
+          },
+          "decision_first": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the coin is red and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red coin in the library. Do not leave the coin red: make it green instead. Do not relocate the coin: keep it in the library. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is red.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the coin is green and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red coin in the library. Do not leave the coin red: make it green instead. Do not keep the coin in the library: put it in the garden instead. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the coin is green and is in the garden."
+      },
+      {
+        "group": "p10-structure-0000",
+        "family": "cancellation",
+        "context": "Case 10140017: Noah owns a red book in the garden. Original instruction: paint the book blue. This instruction is cancelled if permission is denied. Permission is denied. Follow uncancelled instructions and otherwise keep its color unchanged. Keep the book's location unchanged. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the garden."
+      },
+      {
+        "group": "p10-structure-0000",
+        "family": "cancellation",
+        "context": "Case 10140017: Noah owns a red book in the garden. Original instruction: paint the book blue. This instruction is cancelled if permission is denied. Permission is denied. Follow uncancelled instructions and otherwise keep its color unchanged. Move the book to the library. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "red",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      },
+      {
+        "group": "p10-structure-0000",
+        "family": "cancellation",
+        "context": "Case 10140017: Noah owns a red book in the garden. Original instruction: paint the book blue. This instruction is cancelled if permission is denied. Permission is granted. Follow uncancelled instructions and otherwise keep its color unchanged. Keep the book's location unchanged. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the garden."
+      },
+      {
+        "group": "p10-structure-0000",
+        "family": "cancellation",
+        "context": "Case 10140017: Noah owns a red book in the garden. Original instruction: paint the book blue. This instruction is cancelled if permission is denied. Permission is granted. Follow uncancelled instructions and otherwise keep its color unchanged. Move the book to the library. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is in the library.",
+            "tokens": 12
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      },
+      {
+        "group": "p10-structure-0000",
+        "family": "cancellation",
+        "context": "Case 10140017: Noah owns a red coin in the garden. Original instruction: paint the coin blue. This instruction is cancelled if permission is denied. Permission is denied. Follow uncancelled instructions and otherwise keep its color unchanged. Keep the coin's location unchanged. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the garden."
+      },
+      {
+        "group": "p10-structure-0000",
+        "family": "cancellation",
+        "context": "Case 10140017: Noah owns a red coin in the garden. Original instruction: paint the coin blue. This instruction is cancelled if permission is denied. Permission is denied. Follow uncancelled instructions and otherwise keep its color unchanged. Move the coin to the library. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "red",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is in the library.",
+            "tokens": 12
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the library."
+      },
+      {
+        "group": "p10-structure-0000",
+        "family": "cancellation",
+        "context": "Case 10140017: Noah owns a red coin in the garden. Original instruction: paint the coin blue. This instruction is cancelled if permission is denied. Permission is granted. Follow uncancelled instructions and otherwise keep its color unchanged. Keep the coin's location unchanged. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the garden."
+      },
+      {
+        "group": "p10-structure-0000",
+        "family": "cancellation",
+        "context": "Case 10140017: Noah owns a red coin in the garden. Original instruction: paint the coin blue. This instruction is cancelled if permission is denied. Permission is granted. Follow uncancelled instructions and otherwise keep its color unchanged. Move the coin to the library. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is in the library.",
+            "tokens": 12
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the library."
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue book in the garden. Original instruction: paint the book red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is inactive. Keep the book's location unchanged. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "decision_first": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is red.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the book is red and is in the garden."
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue book in the garden. Original instruction: paint the book red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is inactive. Move the book to the library. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "red",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is in the library.",
+            "tokens": 12
+          },
+          "decision_first": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is red and is in the library."
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue book in the garden. Original instruction: paint the book red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is active. Keep the book's location unchanged. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "decision_first": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is red.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the book is red and is in the garden."
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue book in the garden. Original instruction: paint the book red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is active. Move the book to the library. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is in the library.",
+            "tokens": 12
+          },
+          "decision_first": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is red and is in the library."
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue coin in the garden. Original instruction: paint the coin red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is inactive. Keep the coin's location unchanged. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is red and is in the garden."
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue coin in the garden. Original instruction: paint the coin red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is inactive. Move the coin to the library. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "red",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is in the library.",
+            "tokens": 12
+          },
+          "decision_first": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is red and is in the library."
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue coin in the garden. Original instruction: paint the coin red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is active. Keep the coin's location unchanged. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is red and is in the garden."
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue coin in the garden. Original instruction: paint the coin red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is active. Move the coin to the library. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is in the library.",
+            "tokens": 12
+          },
+          "decision_first": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is red and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green book in the garden. If repainting is authorized, paint the book red; otherwise retain its current color. If relocation is authorized, move the book to the library; otherwise retain its current location. Repainting is not authorized. Relocation is not authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is red and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is red.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green book in the garden. If repainting is authorized, paint the book red; otherwise retain its current color. If relocation is authorized, move the book to the kitchen; otherwise retain its current location. Repainting is not authorized. Relocation is authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "green",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is red and is in the kitchen.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is red.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the kitchen."
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green book in the garden. If repainting is authorized, paint the book blue; otherwise retain its current color. If relocation is authorized, move the book to the library; otherwise retain its current location. Repainting is authorized. Relocation is not authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the library.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green book in the garden. If repainting is authorized, paint the book blue; otherwise retain its current color. If relocation is authorized, move the book to the kitchen; otherwise retain its current location. Repainting is authorized. Relocation is authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the kitchen.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the kitchen."
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green coin in the garden. If repainting is authorized, paint the coin red; otherwise retain its current color. If relocation is authorized, move the coin to the library; otherwise retain its current location. Repainting is not authorized. Relocation is not authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is green and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green coin in the garden. If repainting is authorized, paint the coin red; otherwise retain its current color. If relocation is authorized, move the coin to the kitchen; otherwise retain its current location. Repainting is not authorized. Relocation is authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "green",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is green and is in the kitchen.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is green and is in the kitchen."
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green coin in the garden. If repainting is authorized, paint the coin blue; otherwise retain its current color. If relocation is authorized, move the coin to the library; otherwise retain its current location. Repainting is authorized. Relocation is not authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is green.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the coin is green and is in the library."
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green coin in the garden. If repainting is authorized, paint the coin blue; otherwise retain its current color. If relocation is authorized, move the coin to the kitchen; otherwise retain its current location. Repainting is authorized. Relocation is authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is green.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the kitchen."
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red book in the kitchen. If repainting is authorized, paint the book blue; otherwise retain its current color. If relocation is authorized, move the book to the garden; otherwise retain its current location. Repainting is not authorized. Relocation is not authorized. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "red",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is red and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red book in the kitchen. If repainting is authorized, paint the book blue; otherwise retain its current color. If relocation is authorized, move the book to the garden; otherwise retain its current location. Repainting is not authorized. Relocation is authorized. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is blue.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red book in the kitchen. If repainting is authorized, paint the book green; otherwise retain its current color. If relocation is authorized, move the book to the garden; otherwise retain its current location. Repainting is authorized. Relocation is not authorized. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "green",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is green and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is green.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red book in the kitchen. If repainting is authorized, paint the book green; otherwise retain its current color. If relocation is authorized, move the book to the garden; otherwise retain its current location. Repainting is authorized. Relocation is authorized. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "object": "book",
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is green and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is green.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red coin in the kitchen. If repainting is authorized, paint the coin blue; otherwise retain its current color. If relocation is authorized, move the coin to the garden; otherwise retain its current location. Repainting is not authorized. Relocation is not authorized. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "red",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is red and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red coin in the kitchen. If repainting is authorized, paint the coin blue; otherwise retain its current color. If relocation is authorized, move the coin to the garden; otherwise retain its current location. Repainting is not authorized. Relocation is authorized. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red coin in the kitchen. If repainting is authorized, paint the coin green; otherwise retain its current color. If relocation is authorized, move the coin to the garden; otherwise retain its current location. Repainting is authorized. Relocation is not authorized. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "green",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is green and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is green and is in the garden."
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red coin in the kitchen. If repainting is authorized, paint the coin green; otherwise retain its current color. If relocation is authorized, move the coin to the garden; otherwise retain its current location. Repainting is authorized. Relocation is authorized. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "object": "coin",
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is green and is in the garden.",
+            "tokens": 15
+          },
+          "decision_first": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is green and is in the garden."
+      },
+      {
+        "group": "p16-confirm-0000",
+        "family": "held_wording",
+        "context": "Inventory entry 26000000: a red coin is in the library. The entry to repaint the coin blue is executable for qualifying requests only. The entry to relocate the coin to the kitchen is unconditional. A request qualifies precisely when it meets every required check. The request met every required check. The seals are broken. A clerk replaced the clock battery. There are no further actions. What will the coin's color and location be after these entries are executed?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the kitchen."
+      },
+      {
+        "group": "p16-confirm-0000",
+        "family": "held_wording",
+        "context": "Inventory entry 26000000: a red coin is in the library. The entry to repaint the coin blue is executable for qualifying requests only. The entry to relocate the coin to the kitchen is unconditional. A request qualifies precisely when it meets every required check. The request fell short of a required check. The seals are broken. A clerk replaced the clock battery. There are no further actions. What will the coin's color and location be after these entries are executed?",
+        "truth": {
+          "object": "coin",
+          "color": "red",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is red and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the kitchen."
+      },
+      {
+        "group": "p16-confirm-0000",
+        "family": "held_wording",
+        "context": "Inventory entry 26000000: a red coin is in the library. The entry to repaint the coin blue is executable for qualifying requests only. The entry to relocate the coin to the kitchen is unconditional. A request qualifies precisely when it meets every required check. The record omits whether the request met every required check. The seals are broken. A clerk replaced the clock battery. There are no further actions. What will the coin's color and location be after these entries are executed?",
+        "truth": null,
+        "outputs": {
+          "native": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "checkpoint": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the kitchen."
+      },
+      {
+        "group": "p16-confirm-0000",
+        "family": "held_wording",
+        "context": "Inventory entry 26000000: a red coin is in the library. The entry to repaint the coin blue is executable for qualifying requests only. The entry to relocate the coin to the kitchen is unconditional. A request qualifies precisely when it meets every required check. The request met every required check. The seals are broken. An unrelated delivery has an unknown tracking number. There are no further actions. What will the coin's color and location be after these entries are executed?",
+        "truth": {
+          "object": "coin",
+          "color": "blue",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the coin is blue and is in the kitchen."
+      },
+      {
+        "group": "p16-confirm-0002",
+        "family": "held_wording",
+        "context": "Inventory entry 26000002: a red book is in the kitchen. The entry to repaint the book blue requires both a qualifying request and intact seals. Failure of either prerequisite leaves that attribute alone. Independently, relocate the book to the library. A request qualifies precisely when it meets every required check. The request met every required check. The seals are intact. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      },
+      {
+        "group": "p16-confirm-0002",
+        "family": "held_wording",
+        "context": "Inventory entry 26000002: a red book is in the kitchen. The entry to repaint the book blue requires both a qualifying request and intact seals. Failure of either prerequisite leaves that attribute alone. Independently, relocate the book to the library. A request qualifies precisely when it meets every required check. The request fell short of a required check. The seals are intact. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "object": "book",
+          "color": "red",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      },
+      {
+        "group": "p16-confirm-0002",
+        "family": "held_wording",
+        "context": "Inventory entry 26000002: a red book is in the kitchen. The entry to repaint the book blue requires both a qualifying request and intact seals. Failure of either prerequisite leaves that attribute alone. Independently, relocate the book to the library. A request qualifies precisely when it meets every required check. The record omits whether the request met every required check. The seals are intact. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": null,
+        "outputs": {
+          "native": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "checkpoint": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      },
+      {
+        "group": "p16-confirm-0002",
+        "family": "held_wording",
+        "context": "Inventory entry 26000002: a red book is in the kitchen. The entry to repaint the book blue requires both a qualifying request and intact seals. Failure of either prerequisite leaves that attribute alone. Independently, relocate the book to the library. A request qualifies precisely when it meets every required check. The request met every required check. The seals are intact. An unrelated delivery has an unknown tracking number. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      },
+      {
+        "group": "p16-confirm-0003",
+        "family": "held_wording",
+        "context": "Inventory entry 26000003: a blue book is in the garden. The first entry authorises someone to repaint the book green. A subsequent amendment revokes that entry for qualifying requests. The entry to relocate the book to the library is not revoked. A request qualifies precisely when it meets every required check. The request met every required check. The seals are intact. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the library."
+      },
+      {
+        "group": "p16-confirm-0003",
+        "family": "held_wording",
+        "context": "Inventory entry 26000003: a blue book is in the garden. The first entry authorises someone to repaint the book green. A subsequent amendment revokes that entry for qualifying requests. The entry to relocate the book to the library is not revoked. A request qualifies precisely when it meets every required check. The request fell short of a required check. The seals are intact. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "object": "book",
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the library."
+      },
+      {
+        "group": "p16-confirm-0003",
+        "family": "held_wording",
+        "context": "Inventory entry 26000003: a blue book is in the garden. The first entry authorises someone to repaint the book green. A subsequent amendment revokes that entry for qualifying requests. The entry to relocate the book to the library is not revoked. A request qualifies precisely when it meets every required check. The record omits whether the request met every required check. The seals are intact. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": null,
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the library."
+      },
+      {
+        "group": "p16-confirm-0003",
+        "family": "held_wording",
+        "context": "Inventory entry 26000003: a blue book is in the garden. The first entry authorises someone to repaint the book green. A subsequent amendment revokes that entry for qualifying requests. The entry to relocate the book to the library is not revoked. A request qualifies precisely when it meets every required check. The request met every required check. The seals are intact. An unrelated delivery has an unknown tracking number. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is green and is in the library."
+      },
+      {
+        "group": "p16-confirm-0005",
+        "family": "held_wording",
+        "context": "Inventory entry 26000005: a red book is in the garden. The entry to repaint the book blue depends on the request qualifying. The entry to relocate the book to the library instead depends on the seals being intact. A request qualifies precisely when it meets every required check. The request met every required check. The seals are broken. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      },
+      {
+        "group": "p16-confirm-0005",
+        "family": "held_wording",
+        "context": "Inventory entry 26000005: a red book is in the garden. The entry to repaint the book blue depends on the request qualifying. The entry to relocate the book to the library instead depends on the seals being intact. A request qualifies precisely when it meets every required check. The request fell short of a required check. The seals are broken. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "object": "book",
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      },
+      {
+        "group": "p16-confirm-0005",
+        "family": "held_wording",
+        "context": "Inventory entry 26000005: a red book is in the garden. The entry to repaint the book blue depends on the request qualifying. The entry to relocate the book to the library instead depends on the seals being intact. A request qualifies precisely when it meets every required check. The record omits whether the request met every required check. The seals are broken. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": null,
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      },
+      {
+        "group": "p16-confirm-0005",
+        "family": "held_wording",
+        "context": "Inventory entry 26000005: a red book is in the garden. The entry to repaint the book blue depends on the request qualifying. The entry to relocate the book to the library instead depends on the seals being intact. A request qualifies precisely when it meets every required check. The request met every required check. The seals are broken. An unrelated delivery has an unknown tracking number. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "object": "book",
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "decision_first": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_diagnostic": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "checkpoint": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        },
+        "selected_plan": "Afterward, the book is blue and is in the library."
+      }
+    ]
+  },
+  "plan_serialization": {
+    "methods": [
+      "native",
+      "whole_answer",
+      "independent_fields",
+      "independent_sentence",
+      "oracle_fields",
+      "oracle_sentence"
+    ],
+    "cases": [
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green book in the library. Do not repaint the book: keep its green color. Do not relocate the book: keep it in the library. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is green and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green book in the library. Do not repaint the book: keep its green color. Do not keep the book in the library: put it in the garden instead. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is in the garden and is in the library.",
+            "tokens": 17
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green book in the library. Do not leave the book green: make it blue instead. Do not relocate the book: keep it in the library. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is green and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green book in the library. Do not leave the book green: make it blue instead. Do not keep the book in the library: put it in the garden instead. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is green in the library and is in the garden.",
+            "tokens": 18
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green coin in the library. Do not repaint the coin: keep its green color. Do not relocate the coin: keep it in the library. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is green and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "After the announced actions, the coin is green and is in the library.",
+            "tokens": 15
+          },
+          "independent_fields": {
+            "text": "The coin is green.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "After the announced actions, the coin is green and is in the library.",
+            "tokens": 15
+          },
+          "oracle_fields": {
+            "text": "The coin is green.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "After the announced actions, the coin is green and is in the library.",
+            "tokens": 15
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green coin in the library. Do not repaint the coin: keep its green color. Do not keep the coin in the library: put it in the garden instead. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is green and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is in the garden.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green coin in the library. Do not leave the coin green: make it blue instead. Do not relocate the coin: keep it in the library. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is green and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_sentence": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_sentence": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0001",
+        "family": "corrective",
+        "context": "Case 1900001: Owen owns a green coin in the library. Do not leave the coin green: make it blue instead. Do not keep the coin in the library: put it in the garden instead. A bell rang nearby. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. A clock stood in the room. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is green and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is in the garden.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue book in the kitchen. Do not repaint the book: keep its blue color. Do not relocate the book: keep it in the kitchen. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the kitchen.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue book in the kitchen. Do not repaint the book: keep its blue color. Do not keep the book in the kitchen: put it in the library instead. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the kitchen.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue book in the kitchen. Do not leave the book blue: make it green instead. Do not relocate the book: keep it in the kitchen. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book will be blue and will be in the kitchen.",
+            "tokens": 17
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is blue.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The book is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is blue.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The book is green and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue book in the kitchen. Do not leave the book blue: make it green instead. Do not keep the book in the kitchen: put it in the library instead. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the kitchen.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is blue.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is blue.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue coin in the kitchen. Do not repaint the coin: keep its blue color. Do not relocate the coin: keep it in the kitchen. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the kitchen.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_sentence": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_sentence": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue coin in the kitchen. Do not repaint the coin: keep its blue color. Do not keep the coin in the kitchen: put it in the library instead. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the kitchen.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_sentence": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_sentence": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue coin in the kitchen. Do not leave the coin blue: make it green instead. Do not relocate the coin: keep it in the kitchen. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin will be blue and will be in the kitchen.",
+            "tokens": 17
+          },
+          "whole_answer": {
+            "text": "The coin is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The coin is green and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0002",
+        "family": "corrective",
+        "context": "Case 1900002: Ezra owns a blue coin in the kitchen. Do not leave the coin blue: make it green instead. Do not keep the coin in the kitchen: put it in the library instead. The window was open. Rain fell outside. A visitor waited quietly. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin will be blue and will be in the kitchen.",
+            "tokens": 17
+          },
+          "whole_answer": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is in the kitchen.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is in the kitchen.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red book in the library. Do not repaint the book: keep its red color. Do not relocate the book: keep it in the library. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "red",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is red and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red book in the library. Do not repaint the book: keep its red color. Do not keep the book in the library: put it in the garden instead. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is in the garden and is in the library.",
+            "tokens": 17
+          },
+          "whole_answer": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "oracle_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red book in the library. Do not leave the book red: make it green instead. Do not relocate the book: keep it in the library. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is red and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red book in the library. Do not leave the book red: make it green instead. Do not keep the book in the library: put it in the garden instead. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is red and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red coin in the library. Do not repaint the coin: keep its red color. Do not relocate the coin: keep it in the library. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "red",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red coin in the library. Do not repaint the coin: keep its red color. Do not keep the coin in the library: put it in the garden instead. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is in the garden and is in the library.",
+            "tokens": 17
+          },
+          "whole_answer": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is in the garden.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The coin is in the garden.",
+            "tokens": 7
+          },
+          "oracle_fields": {
+            "text": "The coin is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red coin in the library. Do not leave the coin red: make it green instead. Do not relocate the coin: keep it in the library. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is green.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is green.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0003",
+        "family": "corrective",
+        "context": "Case 1900003: Noah owns a red coin in the library. Do not leave the coin red: make it green instead. Do not keep the coin in the library: put it in the garden instead. Rain fell outside. A visitor waited quietly. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is red.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is green.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue book in the garden. Original instruction: paint the book red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is inactive. Keep the book's location unchanged. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "whole_answer": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is red.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is red.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue book in the garden. Original instruction: paint the book red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is inactive. Move the book to the library. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "red",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is in the library.",
+            "tokens": 12
+          },
+          "whole_answer": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue book in the garden. Original instruction: paint the book red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is active. Keep the book's location unchanged. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "whole_answer": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is red.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is red.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue book in the garden. Original instruction: paint the book red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is active. Move the book to the library. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is in the library.",
+            "tokens": 12
+          },
+          "whole_answer": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue coin in the garden. Original instruction: paint the coin red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is inactive. Keep the coin's location unchanged. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is red.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is red.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue coin in the garden. Original instruction: paint the coin red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is inactive. Move the coin to the library. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "red",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is in the library.",
+            "tokens": 12
+          },
+          "whole_answer": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue coin in the garden. Original instruction: paint the coin red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is active. Keep the coin's location unchanged. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is red.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is red.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p10-structure-0001",
+        "family": "cancellation",
+        "context": "Case 10140018: Nina owns a blue coin in the garden. Original instruction: paint the coin red. A later instruction supersedes it: if a preservation notice is active, keep its color unchanged; otherwise follow the original instruction. The preservation notice is active. Move the coin to the library. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is in the library.",
+            "tokens": 12
+          },
+          "whole_answer": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green book in the garden. If repainting is authorized, paint the book red; otherwise retain its current color. If relocation is authorized, move the book to the library; otherwise retain its current location. Repainting is not authorized. Relocation is not authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is red and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is red.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green book in the garden. If repainting is authorized, paint the book red; otherwise retain its current color. If relocation is authorized, move the book to the kitchen; otherwise retain its current location. Repainting is not authorized. Relocation is authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is red and is in the kitchen.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is red.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The book is red and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the kitchen.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is green and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green book in the garden. If repainting is authorized, paint the book blue; otherwise retain its current color. If relocation is authorized, move the book to the library; otherwise retain its current location. Repainting is authorized. Relocation is not authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the library.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is blue.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is blue.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green book in the garden. If repainting is authorized, paint the book blue; otherwise retain its current color. If relocation is authorized, move the book to the kitchen; otherwise retain its current location. Repainting is authorized. Relocation is authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the kitchen.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is blue.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is blue.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green coin in the garden. If repainting is authorized, paint the coin red; otherwise retain its current color. If relocation is authorized, move the coin to the library; otherwise retain its current location. Repainting is not authorized. Relocation is not authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is red.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The coin is red and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is green.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green coin in the garden. If repainting is authorized, paint the coin red; otherwise retain its current color. If relocation is authorized, move the coin to the kitchen; otherwise retain its current location. Repainting is not authorized. Relocation is authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is red and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is green and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is red.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The coin is red and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The coin is green and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green coin in the garden. If repainting is authorized, paint the coin blue; otherwise retain its current color. If relocation is authorized, move the coin to the library; otherwise retain its current location. Repainting is authorized. Relocation is not authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is green and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The coin is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0004",
+        "family": "conditional",
+        "context": "Case 1800004: At the start, Leah has a green coin in the garden. If repainting is authorized, paint the coin blue; otherwise retain its current color. If relocation is authorized, move the coin to the kitchen; otherwise retain its current location. Repainting is authorized. Relocation is authorized. A bell rang nearby. The window was open. Rain fell outside. The path crossed a hill. The letter arrived early. The door was closed. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "blue",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red book in the kitchen. If repainting is authorized, paint the book blue; otherwise retain its current color. If relocation is authorized, move the book to the garden; otherwise retain its current location. Repainting is not authorized. Relocation is not authorized. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "red",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is blue.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the kitchen.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is red and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red book in the kitchen. If repainting is authorized, paint the book blue; otherwise retain its current color. If relocation is authorized, move the book to the garden; otherwise retain its current location. Repainting is not authorized. Relocation is authorized. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is blue and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is blue.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red book in the kitchen. If repainting is authorized, paint the book green; otherwise retain its current color. If relocation is authorized, move the book to the garden; otherwise retain its current location. Repainting is authorized. Relocation is not authorized. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is green and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is green.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is green.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The book is green and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red book in the kitchen. If repainting is authorized, paint the book green; otherwise retain its current color. If relocation is authorized, move the book to the garden; otherwise retain its current location. Repainting is authorized. Relocation is authorized. A clock stood in the room. The letter arrived early. What will the book's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the book is green and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is green.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is green.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The book is green and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red coin in the kitchen. If repainting is authorized, paint the coin blue; otherwise retain its current color. If relocation is authorized, move the coin to the garden; otherwise retain its current location. Repainting is not authorized. Relocation is not authorized. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "red",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The coin is red and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red coin in the kitchen. If repainting is authorized, paint the coin blue; otherwise retain its current color. If relocation is authorized, move the coin to the garden; otherwise retain its current location. Repainting is not authorized. Relocation is authorized. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is blue and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is blue.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The coin is blue and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The coin is red and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red coin in the kitchen. If repainting is authorized, paint the coin green; otherwise retain its current color. If relocation is authorized, move the coin to the garden; otherwise retain its current location. Repainting is authorized. Relocation is not authorized. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is green and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is green.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is green.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The coin is green and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "phase8-fresh-0005",
+        "family": "conditional",
+        "context": "Case 1800005: At the start, Noah has a red coin in the kitchen. If repainting is authorized, paint the coin green; otherwise retain its current color. If relocation is authorized, move the coin to the garden; otherwise retain its current location. Repainting is authorized. Relocation is authorized. A clock stood in the room. The letter arrived early. What will the coin's color and location be after the announced actions?",
+        "truth": {
+          "color": "green",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "After the announced actions, the coin is green and is in the garden.",
+            "tokens": 15
+          },
+          "whole_answer": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is green.",
+            "tokens": 5
+          },
+          "independent_sentence": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is green.",
+            "tokens": 5
+          },
+          "oracle_sentence": {
+            "text": "The coin is green and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0000",
+        "family": "held_wording",
+        "context": "Inventory entry 26000000: a red coin is in the library. The entry to repaint the coin blue is executable for qualifying requests only. The entry to relocate the coin to the kitchen is unconditional. A request qualifies precisely when it meets every required check. The request met every required check. The seals are broken. A clerk replaced the clock battery. There are no further actions. What will the coin's color and location be after these entries are executed?",
+        "truth": {
+          "color": "blue",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0000",
+        "family": "held_wording",
+        "context": "Inventory entry 26000000: a red coin is in the library. The entry to repaint the coin blue is executable for qualifying requests only. The entry to relocate the coin to the kitchen is unconditional. A request qualifies precisely when it meets every required check. The request fell short of a required check. The seals are broken. A clerk replaced the clock battery. There are no further actions. What will the coin's color and location be after these entries are executed?",
+        "truth": {
+          "color": "red",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The coin is red and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0000",
+        "family": "held_wording",
+        "context": "Inventory entry 26000000: a red coin is in the library. The entry to repaint the coin blue is executable for qualifying requests only. The entry to relocate the coin to the kitchen is unconditional. A request qualifies precisely when it meets every required check. The record omits whether the request met every required check. The seals are broken. A clerk replaced the clock battery. There are no further actions. What will the coin's color and location be after these entries are executed?",
+        "truth": {
+          "color": "unknown",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0000",
+        "family": "held_wording",
+        "context": "Inventory entry 26000000: a red coin is in the library. The entry to repaint the coin blue is executable for qualifying requests only. The entry to relocate the coin to the kitchen is unconditional. A request qualifies precisely when it meets every required check. The request met every required check. The seals are broken. An unrelated delivery has an unknown tracking number. There are no further actions. What will the coin's color and location be after these entries are executed?",
+        "truth": {
+          "color": "blue",
+          "location": "kitchen"
+        },
+        "outputs": {
+          "native": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The coin is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The coin is blue and is in the kitchen.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0002",
+        "family": "held_wording",
+        "context": "Inventory entry 26000002: a red book is in the kitchen. The entry to repaint the book blue requires both a qualifying request and intact seals. Failure of either prerequisite leaves that attribute alone. Independently, relocate the book to the library. A request qualifies precisely when it meets every required check. The request met every required check. The seals are intact. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0002",
+        "family": "held_wording",
+        "context": "Inventory entry 26000002: a red book is in the kitchen. The entry to repaint the book blue requires both a qualifying request and intact seals. Failure of either prerequisite leaves that attribute alone. Independently, relocate the book to the library. A request qualifies precisely when it meets every required check. The request fell short of a required check. The seals are intact. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "color": "red",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is red and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0002",
+        "family": "held_wording",
+        "context": "Inventory entry 26000002: a red book is in the kitchen. The entry to repaint the book blue requires both a qualifying request and intact seals. Failure of either prerequisite leaves that attribute alone. Independently, relocate the book to the library. A request qualifies precisely when it meets every required check. The record omits whether the request met every required check. The seals are intact. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "color": "unknown",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0002",
+        "family": "held_wording",
+        "context": "Inventory entry 26000002: a red book is in the kitchen. The entry to repaint the book blue requires both a qualifying request and intact seals. Failure of either prerequisite leaves that attribute alone. Independently, relocate the book to the library. A request qualifies precisely when it meets every required check. The request met every required check. The seals are intact. An unrelated delivery has an unknown tracking number. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0003",
+        "family": "held_wording",
+        "context": "Inventory entry 26000003: a blue book is in the garden. The first entry authorises someone to repaint the book green. A subsequent amendment revokes that entry for qualifying requests. The entry to relocate the book to the library is not revoked. A request qualifies precisely when it meets every required check. The request met every required check. The seals are intact. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0003",
+        "family": "held_wording",
+        "context": "Inventory entry 26000003: a blue book is in the garden. The first entry authorises someone to repaint the book green. A subsequent amendment revokes that entry for qualifying requests. The entry to relocate the book to the library is not revoked. A request qualifies precisely when it meets every required check. The request fell short of a required check. The seals are intact. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "color": "green",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0003",
+        "family": "held_wording",
+        "context": "Inventory entry 26000003: a blue book is in the garden. The first entry authorises someone to repaint the book green. A subsequent amendment revokes that entry for qualifying requests. The entry to relocate the book to the library is not revoked. A request qualifies precisely when it meets every required check. The record omits whether the request met every required check. The seals are intact. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "color": "unknown",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is in the library.",
+            "tokens": 7
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0003",
+        "family": "held_wording",
+        "context": "Inventory entry 26000003: a blue book is in the garden. The first entry authorises someone to repaint the book green. A subsequent amendment revokes that entry for qualifying requests. The entry to relocate the book to the library is not revoked. A request qualifies precisely when it meets every required check. The request met every required check. The seals are intact. An unrelated delivery has an unknown tracking number. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "color": "blue",
+          "location": "library"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is green and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0005",
+        "family": "held_wording",
+        "context": "Inventory entry 26000005: a red book is in the garden. The entry to repaint the book blue depends on the request qualifying. The entry to relocate the book to the library instead depends on the seals being intact. A request qualifies precisely when it meets every required check. The request met every required check. The seals are broken. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0005",
+        "family": "held_wording",
+        "context": "Inventory entry 26000005: a red book is in the garden. The entry to repaint the book blue depends on the request qualifying. The entry to relocate the book to the library instead depends on the seals being intact. A request qualifies precisely when it meets every required check. The request fell short of a required check. The seals are broken. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "color": "red",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is red and is in the garden.",
+            "tokens": 10
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0005",
+        "family": "held_wording",
+        "context": "Inventory entry 26000005: a red book is in the garden. The entry to repaint the book blue depends on the request qualifying. The entry to relocate the book to the library instead depends on the seals being intact. A request qualifies precisely when it meets every required check. The record omits whether the request met every required check. The seals are broken. A clerk replaced the clock battery. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "color": "unknown",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          }
+        }
+      },
+      {
+        "group": "p16-confirm-0005",
+        "family": "held_wording",
+        "context": "Inventory entry 26000005: a red book is in the garden. The entry to repaint the book blue depends on the request qualifying. The entry to relocate the book to the library instead depends on the seals being intact. A request qualifies precisely when it meets every required check. The request met every required check. The seals are broken. An unrelated delivery has an unknown tracking number. There are no further actions. What will the book's color and location be after these entries are executed?",
+        "truth": {
+          "color": "blue",
+          "location": "garden"
+        },
+        "outputs": {
+          "native": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "whole_answer": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "independent_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "independent_sentence": {
+            "text": "The book is blue and is in the library.",
+            "tokens": 10
+          },
+          "oracle_fields": {
+            "text": "The book is in the garden.",
+            "tokens": 7
+          },
+          "oracle_sentence": {
+            "text": "The book is blue and is in the garden.",
+            "tokens": 10
+          }
+        }
+      }
+    ]
+  }
+}

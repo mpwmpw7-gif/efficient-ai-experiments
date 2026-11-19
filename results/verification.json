@@ -1,0 +1,85 @@
+{
+  "historical_source_hashes_verified": 32,
+  "exact_public_feature_parity_splits": [
+    "train",
+    "dev",
+    "test",
+    "obstacle",
+    "sensor",
+    "confirmation",
+    "phase42",
+    "novel"
+  ],
+  "full_relation_gpu": {
+    "hardware": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "torch": "2.7.1+cu126",
+    "transformers": "5.22.2",
+    "all_confirmation_counts_equal_to_archive": true,
+    "metrics": {
+      "32": {
+        "grouped": {
+          "documents": 384,
+          "forward_edges_correct": 262,
+          "forward_edges_total": 768,
+          "signed_reverse_correct": 7,
+          "signed_reverse_total": 512,
+          "complete_swaps_correct": 28,
+          "complete_swaps_total": 192,
+          "states_correct": 100,
+          "correct_states_with_incorrect_edges": 40,
+          "oracle_states_correct": 384
+        },
+        "mixed": {
+          "documents": 384,
+          "forward_edges_correct": 351,
+          "forward_edges_total": 768,
+          "signed_reverse_correct": 72,
+          "signed_reverse_total": 512,
+          "complete_swaps_correct": 41,
+          "complete_swaps_total": 192,
+          "states_correct": 143,
+          "correct_states_with_incorrect_edges": 32,
+          "oracle_states_correct": 384
+        }
+      },
+      "43": {
+        "grouped": {
+          "documents": 384,
+          "forward_edges_correct": 245,
+          "forward_edges_total": 768,
+          "signed_reverse_correct": 73,
+          "signed_reverse_total": 512,
+          "complete_swaps_correct": 27,
+          "complete_swaps_total": 192,
+          "states_correct": 78,
+          "correct_states_with_incorrect_edges": 11,
+          "oracle_states_correct": 384
+        },
+        "mixed": {
+          "documents": 384,
+          "forward_edges_correct": 308,
+          "forward_edges_total": 768,
+          "signed_reverse_correct": 22,
+          "signed_reverse_total": 512,
+          "complete_swaps_correct": 36,
+          "complete_swaps_total": 192,
+          "states_correct": 146,
+          "correct_states_with_incorrect_edges": 65,
+          "oracle_states_correct": 384
+        }
+      }
+    }
+  },
+  "cpu_relation_smoke": {
+    "completed": true,
+    "updates_per_arm": 24,
+    "test_documents_per_arm": 32
+  },
+  "local_tests": {
+    "python": "3.13.5",
+    "with_pytorch_pass": 10,
+    "requirements_only_pass": 8,
+    "optional_skips_without_pytorch": 2
+  },
+  "hosted_ci_run": false
+}

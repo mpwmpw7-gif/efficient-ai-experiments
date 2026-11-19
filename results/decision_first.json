@@ -1,0 +1,56 @@
+{
+  "state_generation": {
+    "native": {
+      "n": 80,
+      "accuracy": 0.2,
+      "complete": 0.65
+    },
+    "decision_first": {
+      "n": 80,
+      "accuracy": 0.6375,
+      "complete": 1.0
+    },
+    "oracle_diagnostic": {
+      "n": 80,
+      "accuracy": 0.95,
+      "complete": 0.95
+    },
+    "checkpoint": {
+      "n": 80,
+      "accuracy": 0.175,
+      "complete": 0.3125
+    }
+  },
+  "plan_serialization": {
+    "native": {
+      "n": 64,
+      "accuracy": 0.1875,
+      "complete": 0.625
+    },
+    "whole_answer": {
+      "n": 64,
+      "accuracy": 0.609375,
+      "complete": 1.0
+    },
+    "independent_fields": {
+      "n": 64,
+      "accuracy": 0.0625,
+      "complete": 0.0625
+    },
+    "independent_sentence": {
+      "n": 64,
+      "accuracy": 0.5,
+      "complete": 0.96875
+    },
+    "oracle_fields": {
+      "n": 64,
+      "accuracy": 0.0625,
+      "complete": 0.0625
+    },
+    "oracle_sentence": {
+      "n": 64,
+      "accuracy": 0.9375,
+      "complete": 0.9375
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "inverse_regularisation": 4.0,
+  "max_updates": 120,
+  "temperature_range": [0.25, 4.0],
+  "deadband": 0.1,
+  "switch_prior": 0.1,
+  "evaluation_splits": ["familiar", "obstacle_shift", "sensor_shift", "combined_shift", "blur_confirmation", "banded_confirmation"]
+}
